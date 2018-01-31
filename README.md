@@ -1,6 +1,7 @@
 ### Purpose
 This python script can be used for tracking file/directory changes. It also reports the difference between two snap shots of the file/directory under watch and list out file addition or file deletion or file modifications.
 
+
 There are many ways to monitor file/directory changes in real time. One such example is fswatch program available here:
 https://github.com/emcrisostomo/fswatch
 
@@ -27,8 +28,11 @@ When tracker.py is called with diff argument, it compares between two snapshots 
 
 #### diff mode
 ```psj@ubuntu:~/Dev$ python tracker.py diff snap.json snap1.json```
+
+```
 DEBUG:__main__:Executing diff function between snap.json and snap1.json to find out file/directory changes
 INFO:__main__:Entry - /home/psj/Dev/2017-project/test.txt is removed.
+```
 
 The script can run on both python 2 and python 3.
 ### Python required libraries
